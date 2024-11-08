@@ -1,0 +1,124 @@
+body {
+  background-color: hsl(47, 88%, 63%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  flex-direction: column;
+  position: relative;
+}
+
+.container {
+  width: 350px;
+  border-radius: 15px;
+  box-shadow: 10px 10px rgb(0, 0, 0);
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding: 25px;
+  background-color: hsl(0, 0%, 100%);
+  overflow: hidden;
+}
+.container .hero-image img {
+  width: 100%;
+  border-radius: 15px;
+}
+.container .blog-info {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.container .blog-info h3 {
+  font-family: "Figtree", sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  display: inline-block;
+  background-color: hsl(47, 88%, 63%);
+  padding: 5px 15px;
+  margin: 0;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+}
+.container .blog-details {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  font-family: "Figtree", sans-serif;
+}
+.container .blog-details .blog-date {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+}
+.container .blog-details .blog-title {
+  font-size: 24px;
+  font-weight: 800;
+  margin: 15px 0;
+  cursor: pointer;
+}
+.container .blog-details .blog-title:active {
+  color: hsl(47, 88%, 63%);
+}
+.container .blog-details .blog-description {
+  font-size: 16px;
+  font-weight: 500;
+  color: hsl(0, 0%, 42%);
+  margin: 0;
+}
+.container .author {
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  margin-top: 15px;
+}
+.container .author img {
+  width: 36px;
+  height: 36px;
+  margin-right: 15px;
+}
+.container .author h2 {
+  font-size: 16px;
+  font-family: "Figtree", sans-serif;
+  font-weight: 800;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 25px;
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+}
+.attribution a {
+  color: blue;
+}
+
+@media (max-width: 450px) {
+  .container {
+    width: 275px;
+    padding: 20px;
+  }
+  .container .blog-details .blog-info h3 {
+    font-size: 14px;
+  }
+  .container .blog-details .blog-date {
+    font-size: 14px;
+  }
+  .container .blog-details .blog-title {
+    font-size: 22px;
+  }
+  .container .blog-details .blog-description {
+    font-size: 14px;
+  }
+  .container .author h2 {
+    font-size: 14px;
+  }
+  .attribution {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=styles.css.map */
